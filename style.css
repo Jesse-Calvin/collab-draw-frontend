@@ -1,0 +1,72 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    margin: 20px 0 10px;
+    font-weight: 600;
+    color: #333;
+}
+
+#controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    padding: 8px 12px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+#controls input[type="color"],
+#controls button {
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#controls input[type="color"] {
+    width: 40px;
+    padding: 0;
+}
+
+#controls button {
+    padding: 0 16px;
+    background: #4cafef;
+    color: white;
+    font-weight: 500;
+}
+
+#controls button:hover {
+    background: #3b8edb;
+    transform: translateY(-1px);
+}
+
+canvas {
+    display: block;
+    margin: 0 auto 20px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+    touch-action: none; /* prevents scrolling on touch devices */
+}
+
+/* Make it responsive for smaller screens */
+@media (max-width: 900px) {
+    canvas {
+        width: 95%;
+        height: auto;
+    }
+}
